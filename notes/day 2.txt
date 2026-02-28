@@ -1,0 +1,6 @@
+DAY 2 NOTES:
+
+- Encoded all categorical variables using LabelEncoder.
+- No missing values detected.
+- Strong correlation found between G2 and G3.
+- Decided to (keep/remove) G1 and G2.
