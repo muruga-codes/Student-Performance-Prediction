@@ -1,0 +1,62 @@
+Day 6 – Model Evaluation & Visualization
+Project: Student Performance Prediction
+
+Objective:
+To deeply evaluate the trained model using performance metrics and visualization techniques, and to understand prediction behavior.
+
+1. Regression Evaluation Metrics
+
+R² Score (Coefficient of Determination)
+- Measures how much variance in G3 is explained by the model.
+- Range: 0 to 1
+- Higher value indicates better model performance.
+
+Mean Absolute Error (MAE)
+- Average absolute difference between actual and predicted values.
+- Lower MAE indicates better prediction accuracy.
+
+Mean Squared Error (MSE)
+- Squares the errors before averaging.
+- Penalizes large errors more heavily.
+
+Root Mean Squared Error (RMSE)
+- Square root of MSE.
+- Same unit as target variable (G3).
+- Easier to interpret than MSE.
+
+2. Actual vs Predicted Visualization
+
+- Plotted actual G3 values against predicted values.
+- Points close to diagonal line indicate good performance.
+- Wide scatter suggests underfitting.
+- Pattern formation suggests model bias.
+
+3. Residual Analysis
+
+Residual = Actual - Predicted
+
+- Random distribution around zero indicates good model fit.
+- Clear patterns indicate missing relationships.
+- Increasing spread may indicate variance issues.
+
+4. Feature Importance (Tree-Based Models)
+
+- Used Random Forest feature importance.
+- G2 (Second Period Grade) had highest impact.
+- G1 (First Period Grade) also strong predictor.
+- Study time positively influenced performance.
+- Absences negatively influenced performance.
+
+Key Learnings:
+
+- Evaluation metrics are critical after model training.
+- R² alone is not enough; MAE and RMSE provide practical error insights.
+- Residual analysis helps detect hidden model issues.
+- Feature importance improves interpretability.
+- Visualization enhances understanding of model behavior.
+"""
+
+file_path = "/mnt/data/Day_6_Model_Evaluation_Notes.txt"
+pypandoc.convert_text(text_content, 'plain', format='md', outputfile=file_path, extra_args=['--standalone'])
+
+file_path
