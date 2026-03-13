@@ -1,0 +1,45 @@
+Day 5 – Model Optimization & Final Insights
+Project: Student Performance Prediction
+
+Objective:
+Optimize the machine learning model and select the best-performing algorithm for predicting final grade (G3).
+
+Steps Performed:
+
+1. Applied Cross-Validation
+- Used K-Fold Cross Validation
+- Evaluated model stability across multiple splits
+- Ensured consistent performance
+
+2. Hyperparameter Tuning
+- Tuned Decision Tree parameters (max_depth, min_samples_split)
+- Compared performance before and after tuning
+- Reduced overfitting
+
+3. Model Comparison
+- Compared Linear Regression, Decision Tree Regressor, and Random Forest Regressor
+- Evaluated using R² Score and MAE
+- Checked generalization capability
+
+4. Final Model Selection
+- Selected model based on higher R²
+- Lower MAE
+- Better stability in cross-validation
+
+Key Learnings:
+
+- Cross-validation increases model reliability
+- Hyperparameter tuning improves generalization
+- Ensemble models like Random Forest can capture complex patterns
+- Model selection depends on dataset characteristics
+
+Final Insight:
+
+Previous grades (G1, G2) are the strongest predictors of final grade (G3).
+Behavioral and study-related features also influence performance.
+"""
+
+file_path = "/mnt/data/Day_5_Model_Optimization_Notes.txt"
+pypandoc.convert_text(text_content, 'plain', format='md', outputfile=file_path, extra_args=['--standalone'])
+
+file_path

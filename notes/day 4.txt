@@ -1,0 +1,41 @@
+Day 4 – Model Improvement & Evaluation
+Project: Student Performance Prediction
+
+Objective:
+Improve the performance of the Linear Regression model and analyze results deeper.
+
+Steps Performed:
+
+1. Evaluated Model Performance
+- Checked Training and Testing R² Score
+- Calculated MAE and MSE
+- Compared scores to detect overfitting or underfitting
+
+2. Feature Importance Analysis
+- Used model.coef_ to understand feature impact
+- Observed that previous grades (G1, G2) strongly influence final grade (G3)
+- Study time positively impacts performance
+- Absences negatively affect performance
+
+3. Feature Selection
+- Removed low-impact features
+- Retrained the model
+- Compared new performance metrics
+
+4. Model Comparison
+- Compared Linear Regression with Decision Tree Regressor
+- Observed differences in performance and generalization
+
+Key Learnings:
+
+- Model evaluation is as important as training
+- Small gap between training and testing score indicates good generalization
+- Large gap indicates overfitting
+- Low scores on both training and testing indicate underfitting
+- Feature selection improves model stability and performance
+"""
+
+file_path = "/mnt/data/Day_4_Model_Improvement_Notes.txt"
+pypandoc.convert_text(text_content, 'plain', format='md', outputfile=file_path, extra_args=['--standalone'])
+
+file_path

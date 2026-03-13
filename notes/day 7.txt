@@ -1,0 +1,53 @@
+Day 7 – Building the Machine Learning Model
+-------------------------------------------
+
+Objective:
+The goal of Day 7 is to train a Machine Learning model that can predict a student's final grade (G3) using previous academic information.
+
+Steps Performed:
+
+1. Load the Dataset
+The dataset is loaded using Pandas. It contains student academic records such as study time, absences, and previous grades.
+
+Important features:
+- Study Time
+- Absences
+- G1 (First period grade)
+- G2 (Second period grade)
+- G3 (Final grade)
+
+2. Feature Selection
+Features are the input variables used for prediction.
+
+Selected features:
+studytime, absences, G1, G2
+
+Target variable:
+G3 (Final grade)
+
+3. Train-Test Split
+The dataset is divided into:
+- Training Data (80%) used to train the model
+- Testing Data (20%) used to evaluate the model
+
+4. Model Training
+The model used is Random Forest Regressor.
+
+Why Random Forest?
+- Works well with tabular datasets
+- Handles complex relationships
+- Reduces overfitting
+
+5. Model Saving
+After training, the model is saved using Pickle.
+
+Saved file:
+student_model.pkl
+
+Key Learning:
+- Dataset preparation
+- Feature selection
+- Train-test split
+- Model training
+- Saving trained models
+

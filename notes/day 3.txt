@@ -1,0 +1,54 @@
+Day 3 – Model Building Notes
+Project: Student Performance Prediction
+
+Objective:
+Build a regression model to predict final student grade (G3).
+
+Target Variable:
+G3 (Final Grade)
+Continuous numerical variable (0–20 scale)
+
+Steps Performed:
+
+1. Feature & Target Split
+X = All columns except G3
+y = G3
+
+2. Train-Test Split
+80% Training Data
+20% Testing Data
+Purpose: Prevent overfitting and evaluate real-world performance
+
+3. Model Used:
+Linear Regression
+Supervised Learning Algorithm
+Used for predicting continuous values
+
+Evaluation Metrics:
+
+R² Score – Measures how well the model explains variance
+MAE (Mean Absolute Error) – Average prediction error
+
+Higher R² = Better model performance
+Lower MAE = More accurate predictions
+
+Key Observations:
+
+Previous grades (G1, G2) strongly influence G3
+Study time positively impacts performance
+Absences negatively affect final grade
+Linear Regression works well when relationship is linear
+
+Learnings:
+
+Importance of proper train-test split
+Understanding regression evaluation metrics
+How features impact target variable
+Practical implementation using Scikit-Learn
+"""
+
+# Convert and save as TXT file
+file_path = "/mnt/data/Day_3_Model_Building_Notes.txt"
+pypandoc.convert_text(text_content, 'plain', format='md', outputfile=file_path, extra_args=['--standalone'])
+
+file_path
