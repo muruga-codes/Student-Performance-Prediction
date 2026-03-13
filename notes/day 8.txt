@@ -1,0 +1,42 @@
+Day 8 – Building the Web Application
+------------------------------------
+
+Objective:
+The goal of Day 8 is to build an interactive web application that predicts student final grades using the trained ML model.
+
+Technology Used:
+Streamlit
+
+What is Streamlit?
+Streamlit is a Python framework used to quickly build data science and machine learning web applications.
+
+Steps Performed:
+
+1. Load the Trained Model
+The saved model file (student_model.pkl) is loaded using Pickle.
+
+2. Create User Input Fields
+The web application asks users to input:
+- Study Time
+- Absences
+- G1 Grade
+- G2 Grade
+
+3. Prediction Process
+When the user clicks the Predict button:
+- The input data is collected
+- Sent to the trained model
+- The model predicts the final grade
+
+4. Display Results
+The predicted final grade is displayed on the screen.
+
+Example:
+Predicted Final Grade: 14
+
+Key Learning:
+- Building ML web apps
+- Connecting trained models with web interfaces
+- Creating interactive user inputs
+
+

@@ -1,0 +1,74 @@
+Day 9 – Model Evaluation and Visualization
+------------------------------------------
+
+Objective:
+Day 9 focuses on evaluating the machine learning model to understand how well it performs.
+
+Evaluation Metrics:
+
+1. R² Score
+R² measures how well the model explains the variation in the data.
+
+Range:
+0 = Poor model
+1 = Perfect model
+
+Example:
+R² Score = 0.85
+
+Meaning:
+The model explains 85% of the variation in student grades.
+
+2. Mean Absolute Error (MAE)
+MAE calculates the average difference between actual and predicted values.
+
+Example:
+Actual Grade = 15
+Predicted Grade = 13
+Error = 2
+
+3. Mean Squared Error (MSE)
+MSE squares the prediction errors and calculates the average.
+
+Formula concept:
+MSE = Average((Actual - Predicted)^2)
+
+Large errors are penalized more.
+
+4. Root Mean Squared Error (RMSE)
+RMSE is the square root of MSE.
+
+RMSE = sqrt(MSE)
+
+Example:
+RMSE = 2.1
+
+Meaning:
+The prediction is about 2 marks off on average.
+
+Visualization:
+
+1. Actual vs Predicted Plot
+This graph compares actual grades with predicted grades.
+If points lie close to the diagonal line, predictions are accurate.
+
+2. Feature Importance
+Random Forest models show which features influence predictions the most.
+
+Example:
+G2 – High importance
+G1 – High importance
+Studytime – Medium importance
+Absences – Low importance
+
+Key Learning:
+- Model evaluation techniques
+- Understanding prediction errors
+- Visualizing ML model performance
+- Interpreting feature importance
+"""
+
+output_path = "/mnt/data/day7_day8_day9_ml_notes.txt"
+pypandoc.convert_text(text_md, "plain", format="md", outputfile=output_path, extra_args=['--standalone'])
+
+print(output_path)
