@@ -22,3 +22,5 @@ if st.button("Predict"):
     prediction = model.predict(input_data)
 
     st.success(f"Predicted Final Grade: {prediction[0]:.2f}")
+st.sidebar.title("Project Info")
+st.sidebar.write("Student Performance ML Project")
