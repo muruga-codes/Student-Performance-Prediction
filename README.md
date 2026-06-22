@@ -2,17 +2,17 @@
 
  📌 Project Overview
 
-This project predicts a student's **final grade (G3)** based on academic and behavioral factors using **Machine Learning**.
+This project predicts a student's final grade (G3) based on academic and behavioral factors using Machine Learning.
 The goal is to help identify patterns in student performance and build a model that can estimate final outcomes from previous grades and study habits.
 
-The model is trained using the **Student Performance Dataset** and deployed as an **interactive web application using Streamlit**.
+The model is trained using the **Student Performance Dataset** and deployed as an interactive web application using Streamlit.
 
 🚀 Features
 
 * Data preprocessing and feature selection
-* Machine Learning model training using **Random Forest Regressor**
-* Model serialization using **Pickle**
-* Interactive **Streamlit Web App**
+* Machine Learning model training using Random Forest Regressor
+* Model serialization using Pickle
+* Interactive Streamlit Web App
 * Real-time prediction of student performance
 
 🧠 Machine Learning Workflow
@@ -39,7 +39,7 @@ Key features used in this project:
 | G2         | Second period grade           |
 | G3         | Final grade (Target variable) |
 
-Dataset Source: **UCI Machine Learning Repository – Student Performance Dataset**
+Dataset Source: UCI Machine Learning Repository – Student Performance Dataset
 
 
 🛠️ Tech Stack
@@ -121,9 +121,9 @@ Why Random Forest?
 * Deploy the application online
 * Build a more advanced dashboard UI
 
-🌍 Deployment (Optional)
+🌍 Deployment:
 
-This project can be deployed using:
+This project can be deployed using:https://student-performance-prediction-zunrmn9esrkkhsrm9nvnsb.streamlit.app/
 
 * Streamlit Cloud
 * Hugging Face Spaces
@@ -148,4 +148,4 @@ If you like this project:
 
 📜 License
 
-This project is open-source and available under the **MIT License**.
+This project is open-source and available under the MIT License.
